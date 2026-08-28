@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Flow Company Ltd.</title>
+  <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../img/logo/red-bg-free.png" />
+</head>
+
+<body>
+  <!-- Navbar Section Started -->
+  <nav class="navBar1">
+    <div class="fullNav">
+      <div id="logo">
+        <a href="index.html">
+          <img src="../img/logo/Achievers - Copyred.png" alt="Achievers-Construction" class="hide-on-mobile" style="margin-top: 13px;" />
+        </a>
+        <!-- <img src="./img/logo/red-bg-free.png" alt="Achievers-Construction" class="hide-on-desktop logo-img-mobile" style="width: 60px; height: 0px; margin-top: 20px;" />-->
+        <img src="../img/logo/red-bg-free.png" class="unique-mobile-logo" style="width: 60px; height: auto; margin-top: 10px; display: none;">
+
+
+      </div>
+      <ul class="list1">
+        <li id="home"><a href="../index.html">Home</a></li>
+        <li id="services">
+  <div onclick="toggleDropdown('drop1')" style="cursor: pointer;">
+    <pre><a href="../ServiceSection" onclick="event.preventDefault();">Services</a> <i class="fa fa-angle-down"></i></pre>
+  </div>
+  <div class="drop1" style="display: none;">
+    <div class="empty"></div>
+    <div class="non-empty">
+      <ul>
+        <li><a href="../ServiceSection#contracts">Contracts and Sub Contracts</a></li>
+        <li><a href="../ServiceSection#construction-management">Construction Management</a></li>
+        <li><a href="../ServiceSection#mep-works">MEP Works</a></li>
+        <li><a href="../ServiceSection#turnkeyfit-out">Turnkey Fit-out Services</a></li>
+        <li><a href="../ServiceSection#it-solutions">IT Solutions</a></li>
+        <li><a href="../ServiceSection#manpower">Man Power Supply</a></li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+        <li id="repair">
+  <div onclick="toggleDropdown('drop2')" style="cursor: pointer;">
+    <pre><a href="../projects" onclick="event.preventDefault();">Projects</a> <i class="fa fa-angle-down"></i></pre>
+  </div>
+  <div class="drop2" style="display: none;">
+    <div class="empty"></div>
+    <div class="non-empty">
+      <ul>
+        <li><a href="../projects#ongoing-projects">On-going projects</a></li>
+        <li><a href="../projects#completed-projects">Completed Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+          <button class="lang-btn" onclick="navigateToArabic()">
+            <i class="fa-solid fa-language"></i>
+            <span>Arabic</span>
+          </button>
+        </li>
+        <li></li>
+      </ul>
+      <div id="bt2">
+        <button><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobNavParent">
+    <nav class="navBar2 navOpen">
+      <ul class="list2">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <div id="services2">
+            <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fa fa-angle-down"></i></pre>
+          </div>
+          <div class="drop3">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li>
+                  <a href="../ServiceSection#contracts">Contracts and Sub Contracts</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#mep-works">MEP works</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#turnkeyfit-out">Turnkey FIt-out Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#it-solutions">IT Solutions</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#manpower">Man Power Supply</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div id="repair2">
+            <pre><a href="../projects">Projects </a> <i id="rep" class="fa fa-angle-down"></i></pre>
+          </div>
+          <div class="drop4">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li><a href="../projects#ongoing-projects">On-going projects</a></li>
+                <li><a href="../projects#completed-projects">Completed Projects</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+          <button class="lang-btn" onclick="navigateToArabic()">
+            <i class="fa-solid fa-language"></i>
+            <span>Arabic</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    
+  </div>
+
+  <!-- Navbar Section Finished -->
+
+  <!-- Hero Section Start-->
+  <section class="hero">
+    <div class="hero-heading">
+      <h1 id="contact-heading1">Contact Us</h1>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Contact us name -->
+  <section style="padding: 30px">
+    <p><a href="../">Home</a> / Contact</p>
+  </section>
+  <!-- Contact us name end -->
+
+  <!-- Talk with Experts Section starts  -->
+  <section class="container-expert">
+    <div class="content-1">
+      <img data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000" class="image-1"
+        src="../img/vectors/customer1.png" alt="Image Talk with expert person" />
+      <div class="text-contact" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Contact With Our Experts</h1>
+        <p>
+          Book your appointment to talk to our experts.
+        </p>
+        <div>
+          <div class="button-container">
+            <button class="button-1" onclick="location.href='mailto:sales@flowltd-ksa.com'">
+              <span> <i class="fa fa-envelope"></i> Mail Us</span>
+            </button>
+
+            <button class="button-1" id="form-open" onclick="window.location.href = '../slotBooking/form.html';">
+              <span> <i class="fa fa-calendar"></i> Book Us</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Talk with Experts Section ends  -->
+
+  <!-- Get in Touch Section -->
+  <section class="getintouch">
+    <div class="getintouch-heading">
+      <h1>Get in Touch</h1>
+      <p>
+        Feel free to contact us if you have any queries regarding our
+        services. <br />We'll feel happy to serve you with our best services.
+      </p>
+    </div>
+    <div class="getintouch-row">
+      <div class="getintouch-contact-cards" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="700">
+        <div class="getintouch-icon">
+          <i class="fa-solid fa-phone fa-2xl"></i>
+        </div>
+        <div class="getintouch-card-content">
+          <h3>Call us</h3>
+          <p><a style="color:#00308F" href="tel:+966508550464">+966 50 595 9827</a></p>
+        </div>
+      </div>
+      <div class="getintouch-contact-cards"
+        onclick="window.open('https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D9%88%D8%A7%D8%AD%D8%A9+%D8%A7%D9%84%D8%B9%D8%B7%D8%A7%D8%A1+%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%E2%80%AD/@24.6630794,46.7064455,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f036430c978fb:0x8ea14a7ca5709b74!8m2!3d24.6630745!4d46.7090204!16s%2Fg%2F11f3n1cqmb?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D', '_blank')"
+        data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="getintouch-icon">
+          <i class="fa-solid fa-map-location-dot fa-2xl"></i>
+        </div>
+        <div class="getintouch-card-content ">
+          <h3>Our Office</h3>
+          <p>Riyadh, ZipCode-13254, KSA</p>
+        </div>
+
+
+      </div>
+      <div class="getintouch-contact-cards" onclick="window.open('mailto:aiskconofficial@gmail.com', '_blank')"
+        data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1300">
+        <div class="getintouch-icon">
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+        </div>
+        <div class="getintouch-card-content">
+          <h3>Mail Us</h3>
+          <p>sales@flowltd-ksa.com</p>
+          <p>info@flowltd-ksa.com</p>
+        </div>
+      </div>
+      <div class="getintouch-contact-cards"
+        onclick="window.open('https://wa.me/966505959827?text=Hi%2C%20I%20need%20more%20information%20about%20your%20services', '_blank')"
+        data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1600">
+        <div class="getintouch-icon">
+          <i class="fa fa-whatsapp" style="font-size:48px;color:rgb(0, 0, 0) fa-2xl"></i>
+        </div>
+        <div class="getintouch-card-content">
+          <h3>Whatsapp</h3>
+          <p>Connect Directly on Whatsapp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get in touch End -->
+
+  <!-- FAQ starts -->
+  <section class="faq">
+    <div class="faq-heading">
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-content">
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+        <div class="faq-question">
+          <h2>1. Why do I need Manpower ?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You need manpower to ensure your operations run efficiently, tasks are completed on time, and your business can grow and scale effectively. Whether you're managing a construction site, a technical project, or a service-based company, having the right people in the right roles helps you maintain productivity, meet deadlines, and deliver quality results.
+            Manpower allows you to: 
+            Execute Work Efficiently: Skilled workers help complete tasks faster and with higher quality.
+            Handle Larger Projects: With more hands on deck, you can take on bigger or more complex jobs.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="faq-question">
+          <h2>2. Why is Flow Company Ltd. perfect for your design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Flow Company Ltd. is the perfect partner who can build your home interiors
+            just the way you want! Our design experts customize designs as per
+            your needs. They will listen to your ideas and suggest options. At
+            Achievers, we incorporate advanced technology into our modular
+            solutions to create flawless interiors and also to expedite the
+            process of making your dream home a reality. So, book your
+            consultation today with KSA's Most Trusted Home Interiors Brand,
+            Flow COmpany and talk to our designers about your project.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div class="faq-question">
+          <h2>3. What services are provided by Flow Company Ltd. ? </h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            We specialize in high-quality construction and modification services, transforming spaces with precision and efficiency. From new builds to renovations, we ensure durability, functionality, and modern design, tailored to meet your specific needs.
+            <br />
+            1. Skilled Manpower Supply ( Male &Female )<br />
+            2. Unskilled Manpower Supply ( Male & Female) <br />
+            3. Mechanical Works <br />
+            4. Architectural & Interior Design <br />
+            5. Project Management <br />
+            6. Fire Detection & Fire Fighting System <br />
+            7. HVAC Works <br />
+            8. Fitout Works <br />
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div class="faq-question">
+          <h2>4. What will be the timelines for my project completion?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            The timeline for a construction project completion can vary
+            depending on a number of factors, such as the size and complexity
+            of the project, the location, weather conditions, availability of
+            materials, etc. Here in Achievers we deliver the project efficiently
+            and on earliest possible time
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
+        <div class="faq-question">
+          <h2>5. Do you handle both residential and commercial projects?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes, we specialize in industrial, commercial, and residential construction, offering tailored solutions to meet the unique requirements of each project with precision and quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ end -->
+
+
+<!-- Connect start -->
+  <section class="hireus">
+    <div class="hireus-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      <div class="hireus-content">
+        <h1>Transform your living space into a work of Art!</h1>
+        <button onclick="window.location.href='../slotBooking/form.html'">
+          <span> Hire us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- Connect end -->
+
+
+  <!-- Footer Section Started -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="../img/logo/red-bg-free.png" alt="logo" style="width: 150px; height: 160px;">
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61576316416108" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Ahmed_AbuHamdan" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/flowltd.ksa/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mr-ahmed-abuhamdan-3a5ba1367/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/966505959827?text=Hi%2C%20I%20need%20more%20information%20about%20your%20services." target="_blank">
+  <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+        <div class="footer-col service">
+          <h4>Services</h4>
+          <ul>
+            <li>
+              <a href="../ServiceSection#contracts"><i class="fa-solid fa-angle-right"></i> Contracts & Sub-Contracts</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#construction-management"><i class="fa-solid fa-angle-right"></i> Construction Management</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#mep-works"><i class="fa-solid fa-angle-right"></i> MEP works</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#turnkeyfit-out"><i class="fa-solid fa-angle-right"></i> Fit-Out Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#it-solutions"><i class="fa-solid fa-angle-right"></i> IT Solutions</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#manpower"><i class="fa-solid fa-angle-right"></i> manpower And Supply</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col repair">
+          <h4>Projects</h4>
+          <ul>
+            <li>
+              <a href="../projects#ongoing-projects"><i class="fa-solid fa-angle-right"></i> ON-GOING </a>
+            </li>
+            <li>
+              <a href="../projects#completed-projects"><i class="fa-solid fa-angle-right"></i> COMPLETED</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:sales@flowltd-ksa.com"><i class="fa-solid fa-envelope"></i>
+                sales@flowltd-ksa.com</a>
+            </li>
+            <li>
+              <a href="tel:+966 50 595 9827"><i class="fa-solid fa-phone"></i> +966 50 595 9827</a>
+            </li>
+            <li>
+              <a href="tel:+966508384786"><i class="fa-solid fa-phone"></i> +966 50 838 4786</a>
+            </li>
+            <li>
+              <a href="tel:+966548172193"><i class="fa-solid fa-phone"></i> +966 54 817 2193</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
+
+      <div>
+        <div class="footer-copyright"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Finished -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function navigateToArabic() {
+      const currentPath = window.location.pathname;
+      // Get the last two parts of the path to handle both /contact and /contact/index.html
+      const pathParts = currentPath.split('/').filter(part => part);
+      const currentPage = pathParts[pathParts.length - 1];
+      const parentDir = pathParts[pathParts.length - 2];
+      
+      // Map of English pages to Arabic pages
+      const pageMap = {
+        '': 'Arabichome.html',
+        'index.html': 'Arabichome.html',
+        'projects': 'projects.html',
+        'projects.html': 'projects.html',
+        'aboutUs': 'aboutUs.html',
+        'aboutUs.html': 'aboutUs.html',
+        'contact': 'contact.html',
+        'contact.html': 'contact.html',
+        'ServiceSection': 'ServiceSection.html',
+        'ServiceSection.html': 'ServiceSection.html'
+      };
+
+      let arabicPage;
+      // Check which directory we're in and set the appropriate Arabic page
+      if (parentDir === 'aboutUs' || currentPage === 'aboutUs') {
+        arabicPage = 'aboutUs.html';
+      } else if (parentDir === 'projects' || currentPage === 'projects') {
+        arabicPage = 'projects.html';
+      } else if (parentDir === 'ServiceSection' || currentPage === 'ServiceSection') {
+        arabicPage = 'ServiceSection.html';
+      } else if (parentDir === 'contact' || currentPage === 'contact') {
+        arabicPage = 'contact.html';
+      } else {
+        arabicPage = pageMap[currentPage] || 'Arabichome.html';
+      }
+      
+      // Get the base URL of the website
+      const baseUrl = window.location.origin;
+      // Navigate to the Arabic page using the full URL
+      window.location.href = `${baseUrl}/arabicPaages/${arabicPage}`;
+    }
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

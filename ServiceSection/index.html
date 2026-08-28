@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Flow Company Ltd.</title>
+  <link rel="icon" type="image/x-icon" href="../img/logo/red-bg-free.png" />
+  <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico" />
+</head>
+
+<body>
+  <!-- Navbar Section Started -->
+  <nav class="navBar1">
+  <div class="fullNav">
+    <div id="logo">
+      <a href="/">
+        <img src="../img/logo/Achievers - Copyred.png" alt="Achievers-Construction" class="hide-on-mobile" style="margin-top: 13px;" />
+      </a>
+      <img src="../img/logo/red-bg-free.png" class="unique-mobile-logo" style="width: 60px; height: auto; margin-top: 10px; display: none;">
+    </div>
+    <ul class="list1">
+      <li id="home"><a href="/">Home</a></li>
+      <li id="services">
+        <div onclick="toggleDropdown('drop1')" style="cursor: pointer;">
+          <pre><a href="/ServiceSection" onclick="event.preventDefault();">Services</a> <i class="fa fa-angle-down"></i></pre>
+        </div>
+        <div class="drop1" style="display: none;">
+          <div class="empty"></div>
+          <div class="non-empty">
+            <ul id="services-dropdown">
+              <li><a href="/ServiceSection#contracts" data-target="#contracts">Contracts and  SubContracts</a></li>
+              <li><a href="/ServiceSection#construction-management" data-target="#construction-management">Construction Management</a></li>
+              <li><a href="/ServiceSection#mep-works" data-target="#mep-works">MEP Works</a></li>
+              <li><a href="/ServiceSection#turnkeyfit-out" data-target="#turnkeyfit-out">Turnkey Fit-out Services</a></li>
+              <li><a href="/ServiceSection#it-solutions" data-target="#it-solutions">IT Solutions</a></li>
+              <li><a href="/ServiceSection#manpower" data-target="#manpower">Man Power Supply</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li id="repair">
+        <div onclick="toggleDropdown('drop2')" style="cursor: pointer;">
+          <pre><a href="/projects" onclick="event.preventDefault();">Projects</a> <i class="fa fa-angle-down"></i></pre>
+        </div>
+        <div class="drop2" style="display: none;">
+          <div class="empty"></div>
+          <div class="non-empty">
+            <ul>
+              <li><a href="/projects#ongoing-projects">On-going projects</a></li>
+              <li><a href="/projects#completed-projects">Completed Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="/aboutUs">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li>
+        <button class="lang-btn" onclick="navigateToArabic()">
+          <i class="fa-solid fa-language"></i>
+          <span>Arabic</span>
+        </button>
+      </li>
+      <li></li>
+    </ul>
+    <div id="bt2">
+      <button><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div id="mobNavParent">
+  <nav class="navBar2 navOpen">
+    <ul class="list2">
+      <li><a href="/">Home</a></li>
+      <li>
+        <div id="services2">
+          <pre><a href="#" onclick="event.preventDefault();">Services </a> <i id="ser" class="fa fa-angle-down"></i></pre>
+        </div>
+        <div class="drop3">
+          <div class="empty"></div>
+          <div>
+            <ul>
+              <li><a href="/ServiceSection#contracts">Contracts & Sub-Contracts</a></li>
+              <li><a href="/ServiceSection#construction-management">Construction Management</a></li>
+              <li><a href="/ServiceSection#mep-works">MEP Works</a></li>
+              <li><a href="/ServiceSection#turnkeyfit-out">Turnkey Fit-out Services</a></li>
+              <li><a href="/ServiceSection#it-solutions">IT Solutions</a></li>
+              <li><a href="/ServiceSection#manpower">Man Power Supply</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div id="repair2">
+          <pre><a href="#">Projects </a> <i id="rep" class="fa fa-angle-down"></i></pre>
+        </div>
+        <div class="drop4">
+          <div class="empty"></div>
+          <div>
+            <ul>
+              <li><a href="/projects#ongoing-projects">On-going projects</a></li>
+              <li><a href="/projects#completed-projects">Completed Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href="/aboutUs">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li>
+        <button class="lang-btn" onclick="navigateToArabic()">
+          <i class="fa-solid fa-language"></i>
+          <span>Arabic</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <!-- Navbar Section Finished -->
+  <!-- OUR SERVICES PAGE STARTS -->
+  <div class="serviceimg-container">
+    <img src="../img/bg/servicenew.jpg" alt="SERVICES" />
+    <!-- <img src="../img/bg/services.webp" alt="SERVICES" /> -->
+    <div class="OUR-services">SERVICES</div>
+  </div>
+
+
+  <!-- starts here -->
+  <section id="contracts">
+    <div class="cont">
+      <div class="contents-cont">
+        <img src="../img/logo/manpowerrr.jpg" alt="construction" data-aos="fade-right" data-aos-easing="ease"
+          data-aos-duration="1000" />
+        <div class="inner-items" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>Contracts and Sub-Contracts</h1>
+          <p>
+            At Flow, we undertake a wide range of contracts and sub-contracts across various sectors, ensuring timely and efficient project execution with a commitment to quality and compliance. Whether it’s a primary contract or a specialized sub-contract, we work closely with clients, consultants, and main contractors to deliver tailored solutions that align with project goals and regulatory standards. Our team brings experience, transparency, and accountability to every engagement—ensuring that both small-scale tasks and large-scale operations are handled with precision and professionalism.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="construction-management">
+    <div class="cont-right">
+      <div class="contents-right">
+        <div class="inner-itemsleft" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>CONSTRUCTION MANAGEMENT</h1>
+          <p>
+            We offer end-to-end construction solutions tailored to meet the unique needs of every project. From the initial concept to ongoing support, our team ensures quality, efficiency, and reliability at every stage. Our services include:
+            <br />
+            <br />• Planning & Design
+            <br />• Design Implementation
+            <br />• Construction
+            <br />• Professional Project Management
+            <br />• Operational Maintenance 
+            <br />• Support Service 
+            <br />
+            <br />
+            We are committed to delivering projects that not only meet expectations—but exceed them.
+
+
+          </p>
+        </div>
+
+        <img src="../img/bg/constructionmanagement.webp" alt="construction" data-aos="fade-down" data-aos-easing="ease"
+          data-aos-duration="1000" />
+      </div>
+    </div>
+  </section>
+  <section id="mep-works">
+    <div class="cont">
+      <div class="contents-cont">
+        <img src="../img/bg/mep1.webp" alt="construction" data-aos="fade-right" data-aos-easing="ease"
+          data-aos-duration="1000" />
+        <div class="inner-items" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>MEP WORKS</h1>
+          <p>
+            At Flow Company Ltd., we offer comprehensive MEP (Mechanical, Electrical, and Plumbing) works tailored to meet the technical and functional needs of modern construction projects. Our services cover the full spectrum—from electrical installations and power distribution to mechanical systems such as HVAC and ventilation, along with plumbing works for water supply, drainage, and sanitary systems. Backed by skilled professionals and a commitment to quality, we ensure that every MEP component is executed with precision, compliance, and efficiency, contributing to the seamless performance of residential, commercial, and industrial developments.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="turnkeyfit-out">
+    <div class="cont-right">
+      <div class="contents-right">
+        <div class="inner-itemsleft" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>Turnkey Fit-out Services</h1>
+          <p>
+            Flow Company Ltd. provides high-quality fit-out services tailored to transform interior spaces into fully functional, aesthetically pleasing environments. Our expertise covers all aspects of fit-out works, including partitioning, ceiling installation, flooring, painting, lighting, HVAC integration, and custom finishing—ensuring each space reflects our client’s vision and meets functional requirements. Whether it's commercial, residential, or retail projects, we deliver turnkey fit-out solutions with attention to detail, timely execution, and strict adherence to safety and quality standards.
+
+
+          </p>
+        </div>
+
+        <img src="../img/bg/turnkey.jpg" alt="construction" data-aos="fade-down" data-aos-easing="ease"
+          data-aos-duration="1000" />
+      </div>
+    </div>
+  </section>
+  <section id="it-solutions">
+    <div class="cont">
+      <div class="contents-cont">
+        <img src="../img/bg/retro.webp" alt="construction" data-aos="fade-right" data-aos-easing="ease"
+          data-aos-duration="1000" />
+        <div class="inner-items" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>IT SOLUTIONS</h1>
+          <p>
+            Our expert support services are designed to ensure robust and uninterrupted operations across your entire infrastructure. We offer a wide range of tailored solutions to meet the evolving needs of your business:
+            <br />
+            <br />• Fiber Optics Solutions
+            <br />• LAN / WAN Network Connectivity & Infrastructure
+
+            <br />• Flexible Network Solutions & Remote Connectivity
+
+            <br />• IP Telephony & PBX Phone Systems
+
+            <br />• CCTV Surveillance Solutions
+
+            <br />• Audio & Video System Integration
+
+            <br />• FM-200 Fire Suppression Solutions
+
+            <br />• Door Access & Biometric Recognition Systems
+
+            <br />• Centralized Cabinet Solutions for Core Components & Cabling
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="manpower">
+    <div class="cont-right">
+      <div class="contents-right">
+        <div class="inner-itemsleft" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>MAN POWER SUPPLY</h1>
+          <p>
+            At Flow Company, we specialize in providing skilled and semi-skilled manpower to meet the diverse needs of your projects and operations. Our workforce is trained, reliable, and ready to contribute to your success across various fields, including:
+            <br />
+            <br />• Electrical Field Technicians
+            <br />• Plumbing Specialists
+            <br />• Professional Drivers
+            <br />• Certified Crane Operators
+            <br />• Male & Female Cleaning Staff
+            <br />• Computer Operators & IT Assistants
+            <br />• Lift/Elevator Operators
+            <br />• Construction Laborers
+            <br />• Experienced Carpenters
+            <br />• Security Guards and etc
+          </p>
+        </div>
+
+        <img src="../img/bg/preconstruction.webp" alt="construction" data-aos="fade-down" data-aos-easing="ease"
+          data-aos-duration="1000" />
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES PAGE ENDS -->
+
+
+
+  <!-- FAQ starts -->
+<section class="faq">
+    <div class="faq-heading">
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-content">
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+        <div class="faq-question">
+          <h2>1. Why do I need Manpower ?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You need manpower to ensure your operations run efficiently, tasks are completed on time, and your business can grow and scale effectively. Whether you're managing a construction site, a technical project, or a service-based company, having the right people in the right roles helps you maintain productivity, meet deadlines, and deliver quality results.
+            Manpower allows you to: 
+            Execute Work Efficiently: Skilled workers help complete tasks faster and with higher quality.
+            Handle Larger Projects: With more hands on deck, you can take on bigger or more complex jobs.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="faq-question">
+          <h2>2. Why is Flow Company Ltd. perfect for your design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Flow Company Ltd. is the perfect partner who can build your home interiors
+            just the way you want! Our design experts customize designs as per
+            your needs. They will listen to your ideas and suggest options. At
+            Achievers, we incorporate advanced technology into our modular
+            solutions to create flawless interiors and also to expedite the
+            process of making your dream home a reality. So, book your
+            consultation today with KSA's Most Trusted Home Interiors Brand,
+            Flow COmpany and talk to our designers about your project.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div class="faq-question">
+          <h2>3. What services are provided by Flow Company Ltd. ? </h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            We specialize in high-quality construction and modification services, transforming spaces with precision and efficiency. From new builds to renovations, we ensure durability, functionality, and modern design, tailored to meet your specific needs.
+            <br />
+            1. Skilled Manpower Supply ( Male &Female )<br />
+            2. Unskilled Manpower Supply ( Male & Female) <br />
+            3. Mechanical Works <br />
+            4. Architectural & Interior Design <br />
+            5. Project Management <br />
+            6. Fire Detection & Fire Fighting System <br />
+            7. HVAC Works <br />
+            8. Fitout Works <br />
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div class="faq-question">
+          <h2>4. What will be the timelines for my project completion?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            The timeline for a construction project completion can vary
+            depending on a number of factors, such as the size and complexity
+            of the project, the location, weather conditions, availability of
+            materials, etc. Here in Achievers we deliver the project efficiently
+            and on earliest possible time
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
+        <div class="faq-question">
+          <h2>5. Do you handle both residential and commercial projects?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes, we specialize in industrial, commercial, and residential construction, offering tailored solutions to meet the unique requirements of each project with precision and quality.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!-- Footer Section Started -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="../img/logo/red-bg-free.png" alt="logo" style="width: 150px; height: 160px;">          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61576316416108" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Ahmed_AbuHamdan" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/flowltd.ksa/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mr-ahmed-abuhamdan-3a5ba1367/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/966505959827?text=Hi%2C%20I%20need%20more%20information%20about%20your%20services." target="_blank">
+  <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+        <div class="footer-col service">
+          <h4>Services</h4>
+          <ul>
+            <li>
+              <a href="../ServiceSection#contracts"><i class="fa-solid fa-angle-right"></i> Contracts & Sub-Contracts</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#construction-management"><i class="fa-solid fa-angle-right"></i> CONSTRUCTION MANAGEMENT</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#mep-works"><i class="fa-solid fa-angle-right"></i> MEP works</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#turnkeyfit-out"><i class="fa-solid fa-angle-right"></i> TURNKEY FIT-OUT SERVICES</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#it-solutions"><i class="fa-solid fa-angle-right"></i> it-solutions</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#manpower"><i class="fa-solid fa-angle-right"></i> MAN POWER SUPPLY</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col repair">
+          <h4>Projects</h4>
+          <ul>
+            <li>
+              <a href="../projects#ongoing-projects"><i class="fa-solid fa-angle-right"></i> ON-GOING PROJECTS</a>
+            </li>
+            <li>
+              <a href="../projects#completed-projects"><i class="fa-solid fa-angle-right"></i> COMPLETED PROJECTS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:sales@flowltd-ksa.com"><i class="fa-solid fa-envelope"></i>
+                sales@flowltd-ksa.com</a>
+            </li>
+            <li>
+              <a href="tel:+966 50 595 9827"><i class="fa-solid fa-phone"></i> +966 50 595 9827</a>
+            </li>
+            <li>
+              <a href="tel:+966508384786"><i class="fa-solid fa-phone"></i> +966 50 838 4786</a>
+            </li>
+            <li>
+              <a href="tel:+966548172193"><i class="fa-solid fa-phone"></i> +966 54 817 2193</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
+
+      <div>
+        <div class="footer-copyright"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Finished -->
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function navigateToArabic() {
+      const currentPath = window.location.pathname;
+      const pathParts = currentPath.split('/').filter(part => part);
+      const currentPage = pathParts[pathParts.length - 1];
+      const parentDir = pathParts[pathParts.length - 2];
+      
+      // Map of English pages to Arabic pages
+      const pageMap = {
+        '': 'Arabichome.html',
+        'index.html': 'Arabichome.html',
+        'projects': 'projects.html',
+        'projects.html': 'projects.html',
+        'aboutUs': 'aboutUs.html',
+        'aboutUs.html': 'aboutUs.html',
+        'contact': 'contact.html',
+        'contact.html': 'contact.html',
+        'ServiceSection': 'service.html',
+        'ServiceSection.html': 'service.html'
+      };
+
+      // Since we're in the ServiceSection directory, we know we want to go to service.html
+      const arabicPage = 'service.html';
+      
+      // Get the base URL of the website
+      const baseUrl = window.location.origin;
+      // Navigate to the Arabic page using the full URL
+      window.location.href = `${baseUrl}/arabicPaages/${arabicPage}`;
+    }
+  </script>
+  <script src="../js/main.js">
+   document.addEventListener("DOMContentLoaded", function () {
+    const dropdownLinks = document.querySelectorAll("#services-dropdown a");
+
+    dropdownLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("data-target");
+        const currentPath = window.location.pathname;
+
+        // Check if we are on the /ServiceSection page already
+        if (currentPath.includes("ServiceSection")) {
+          e.preventDefault(); // prevent full page reload
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+
+          // Optional: Close dropdown manually
+          const dropdown = document.getElementById("services-dropdown");
+          if (dropdown) {
+            dropdown.classList.remove("open"); // or use your dropdown hide logic
+          }
+        }
+      });
+    });
+  });
+  </script>
+</body>
+
+</html>

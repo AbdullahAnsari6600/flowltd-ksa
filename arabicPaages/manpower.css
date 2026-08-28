@@ -1,0 +1,332 @@
+/* Manpower Page Styles */
+
+/* Hero Section */
+.manpower-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../img/bg/manpower-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 79px;
+  }
+  
+  .manpower-hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .manpower-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(315deg, #ffffff 0%, #e0e0e0 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .manpower-hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Services Section */
+  .manpower-services {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2a2a72;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-card i {
+    font-size: 2.5rem;
+    color: #2a2a72;
+    margin-bottom: 20px;
+    background: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #2a2a72;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .service-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Why Choose Us Section */
+  .manpower-why-us {
+    padding: 80px 0;
+    background: white;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateX(10px);
+  }
+  
+  .feature i {
+    font-size: 2rem;
+    color: #2a2a72;
+    background: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .feature-content h3 {
+    font-size: 1.3rem;
+    color: #2a2a72;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .feature-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Process Section */
+  .manpower-process {
+    padding: 80px 0;
+    background: linear-gradient(315deg, #f8f9fa 0%, #e9ecef 74%);
+  }
+  
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .step {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+  }
+  
+  .step h3 {
+    font-size: 1.3rem;
+    color: #2a2a72;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .step p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Contact Section */
+  .manpower-contact {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../img/bg/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .manpower-hero-content h1 {
+      font-size: 2.8rem;
+    }
+    
+    .section-title {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .manpower-hero {
+      height: 50vh;
+    }
+  
+    .manpower-hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .manpower-hero-content p {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .services-grid,
+    .features-grid,
+    .process-steps {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-buttons .button-material {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .manpower-hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .service-card,
+    .feature,
+    .step {
+      padding: 20px;
+    }
+  }
+  
+  /* Animation Classes */
+  [data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+  
+  [data-aos="fade-up"] {
+    transform: translateY(50px);
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+  }
+  
+  [data-aos="fade-right"] {
+    transform: translateX(-50px);
+  }
+  
+  [data-aos="fade-right"].aos-animate {
+    transform: translateX(0);
+  }
+  
+  [data-aos="fade-left"] {
+    transform: translateX(50px);
+  }
+  
+  [data-aos="fade-left"].aos-animate {
+    transform: translateX(0);
+  } 

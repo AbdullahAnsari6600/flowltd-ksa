@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<div id="infoHead">
+  <h1>Book an Appointment</h1>
+  <h3>Book now, build your dream later.</h3>
+</div>
+
+<div class="aptForm">
+  <div class="infoMain">
+    <form id="slotForm" name="submit-to-google-sheet">
+      <div class="input-container">
+
+        <div class="form-input">
+          <label for="name">Name <span>*</span></label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form-input">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="form-input">
+          <label for="phone">Phone <span>*</span></label>
+          <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        <div class="form-input">
+          <label for="address">Address <span>*</span></label>
+          <input type="text" name="address" id="address" required>
+        </div>
+
+        <div class="form-input">
+          <label for="pinCode">Postal Code <span>*</span></label>
+          <input type="text" name="pinCode" id="pinCode" required>
+        </div>
+
+        <div class="form-input">
+          <label for="message">Message <span>*</span></label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+
+        <div class="form-input" id="formBT">
+          <button type="submit" id="btn">Submit</button>
+        </div>
+
+      </div>
+    </form>
+
+    <div id="formMessage" style="display:none; margin-top: 10px;"></div>
+  </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby-cCH8LqC6VihVzh8eq1-zK1_XfaD_olJGdZUjiEGU5EEOfvxwLoB28kRwJMOWGyYmRQ/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    formMessage.style.display = 'block';
+    formMessage.style.color = 'black';
+    formMessage.textContent = 'Submitting...';
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        if (response.ok) {
+          formMessage.textContent = 'Form submitted successfully!';
+          formMessage.style.color = 'green';
+          form.reset();
+        } else {
+          throw new Error('Submission failed');
+        }
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        formMessage.textContent = 'Error submitting form. Please try again.';
+        formMessage.style.color = 'red';
+      });
+  });
+</script>
+
+
+</body>
+</html>

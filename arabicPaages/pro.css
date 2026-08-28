@@ -1,0 +1,99 @@
+/* @media screen and (max-width: 768px) {
+  .home-repair-container,
+  .home-repair-container1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .home-repair-col,
+  .home-repair-col1 {
+    width: 90% !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+
+  .home-repair-col img,
+  .home-repair-col1 img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .linetext {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .navBar1 .list1 {
+    display: none;
+  }
+
+  .navBar2.navOpen {
+    display: block;
+  }
+
+  .unique-mobile-logo {
+    display: block !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  #bt2 {
+    display: block !important;
+  }
+
+  .hero-heading {
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
+} */
+
+
+@media only screen and (max-width: 768px) {
+  .home-repair-container1,
+  .home-repair-container {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-repair-col1,
+  .home-repair-col {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+  }
+
+  .home-repair-col1 img,
+  .home-repair-col img {
+    margin: 20px auto !important;
+    display: block;
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .home-repair-col1 h1,
+  .home-repair-col h1,
+  .home-repair-col1 p,
+  .home-repair-col p {
+    text-align: center !important;
+  }
+
+  .linetext {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
