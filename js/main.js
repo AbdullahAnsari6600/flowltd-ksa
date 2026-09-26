@@ -156,11 +156,18 @@ faqQuestions.forEach((question) => {
 });
 
 
+// if (document.querySelector('.footer-copyright')) {
+//   let year = new Date();
+//   year = year.getFullYear();
+//   document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="./">Flow Company Ltd.</a>, All Rights Reserved.';
+// }
+
 if (document.querySelector('.footer-copyright')) {
-  let year = new Date();
-  year = year.getFullYear();
-  document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="./">Flow Company Ltd.</a>, All Rights Reserved.';
+  document.querySelector('.footer-copyright').innerHTML =
+    'Designed & Developed by <a href="https://primewebsolutionss.vercel.app/" target="_blank" rel="noopener noreferrer">Abdullah Ashraf Ansari <span style="font-size: 12px; margin-left: 3px;">↗</span></a>';
 }
+
+
 
 // ******************* CHATBOT Start ***********************
 const responseArr = [
