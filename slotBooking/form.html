@@ -91,7 +91,7 @@
 </script>
  -->
 
-<!-- <script>
+<script>
   const scriptURL =
     'https://script.google.com/macros/s/AKfycby-cCH8LqC6VihVzh8eq1-zK1_XfaD_olJGdZUjiEGU5EEOfvxwLoB28kRwJMOWGyYmRQ/exec';
 
@@ -128,45 +128,8 @@
       submitButton.disabled = false;
     }
   });
-</script> -->
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby-cCH8LqC6VihVzh8eq1-zK1_XfaD_olJGdZUjiEGU5EEOfvxwLoB28kRwJMOWGyYmRQ/exec';
-
-  const form = document.forms['submit-to-google-sheet'];
-  const formMessage = document.getElementById('formMessage');
-  const submitButton = document.getElementById('btn');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    submitButton.disabled = true;
-    formMessage.style.display = 'block';
-    formMessage.style.color = '#333';
-    formMessage.textContent = 'Submitting your appointment request...';
-
-    try {
-      await fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form),
-        mode: 'no-cors'
-      });
-
-      formMessage.style.color = '#333';
-      formMessage.textContent =
-        'Your request was sent. Please contact us if you do not receive confirmation.';
-
-      form.reset();
-    } catch (error) {
-      console.error('Submission error:', error);
-      formMessage.style.color = 'red';
-      formMessage.textContent =
-        'Could not send your request. Please try again.';
-    } finally {
-      submitButton.disabled = false;
-    }
-  });
 </script>
+
 
 
 </body>
