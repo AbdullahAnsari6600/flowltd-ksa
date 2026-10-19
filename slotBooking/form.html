@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Appointment</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/slotBooking/style.css" />
 </head>
 <body>
 
@@ -61,7 +61,7 @@
   </div>
 </div>
 
-<script>
+<!-- <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycby-cCH8LqC6VihVzh8eq1-zK1_XfaD_olJGdZUjiEGU5EEOfvxwLoB28kRwJMOWGyYmRQ/exec';
   const form = document.forms['submit-to-google-sheet'];
   const formMessage = document.getElementById('formMessage');
@@ -89,6 +89,47 @@
       });
   });
 </script>
+ -->
+
+<script>
+  const scriptURL =
+    'https://script.google.com/macros/s/AKfycby-cCH8LqC6VihVzh8eq1-zK1_XfaD_olJGdZUjiEGU5EEOfvxwLoB28kRwJMOWGyYmRQ/exec';
+
+  const form = document.forms['submit-to-google-sheet'];
+  const formMessage = document.getElementById('formMessage');
+  const submitButton = document.getElementById('btn');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    submitButton.disabled = true;
+    formMessage.style.display = 'block';
+    formMessage.style.color = 'black';
+    formMessage.textContent = 'Submitting...';
+
+    try {
+      await fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form),
+        mode: 'no-cors'
+      });
+
+      formMessage.textContent =
+        'Your request has been sent. Please verify that it was recorded.';
+      formMessage.style.color = 'green';
+      form.reset();
+    } catch (error) {
+      console.error('Form submission error:', error);
+
+      formMessage.textContent =
+        'Unable to send your request. Please try again.';
+      formMessage.style.color = 'red';
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+</script>
+
 
 
 </body>
